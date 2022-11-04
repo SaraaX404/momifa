@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Products</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Momifa - ProductPage</title>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'><link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/single_product.css" rel="stylesheet" />
 </head>
 <body>
+<!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -51,165 +58,137 @@
         </div>
     </div>
 </nav>
-<!-- partial:index.partial.html -->
-<section class="section-products">
-    <div class="container">
-        <div class="row justify-content-center text-center">
-            <div class="col-md-8 col-lg-6">
-                <div class="header">
-                    <h3>Featured Product</h3>
-                    <h2>Popular Products</h2>
+<!-- Product section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="images/03.jpg" alt="..." /></div>
+            <div class="col-md-6">
+                <div class="small mb-1">SKU: BST-498</div>
+                <h1 class="display-5 fw-bolder">Nikee T-Shirt</h1>
+                <div class="fs-5 mb-5">
+                    <span class="text-decoration-line-through">$45.00</span>
+                    <span>$40.00</span>
+                </div>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                <div class="d-flex">
+                    <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                    <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                        <i class="bi-cart-fill me-1"></i>
+                        Add to cart
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <!-- Single Product -->
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div id="product-1" class="single-product">
-                    <div class="part-1">
-                        <ul>
-                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                            <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                        </ul>
+    </div>
+</section>
+<!-- Related items section-->
+<section class="py-5 bg-light">
+    <div class="container px-4 px-lg-5 mt-5">
+        <h2 class="fw-bolder mb-4">Related products</h2>
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/05.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Adidas T-Shirt</h5>
+                            <!-- Product price-->
+                            $40.00 - $80.00
+                        </div>
                     </div>
-                    <div class="part-2">
-                        <h3 class="product-title">Here Product Title</h3>
-                        <h4 class="product-old-price">$79.99</h4>
-                        <h4 class="product-price">$49.99</h4>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Product -->
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div id="product-2" class="single-product">
-                    <div class="part-1">
-                        <span class="discount">15% off</span>
-                        <ul>
-                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                            <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="part-2">
-                        <h3 class="product-title">Here Product Title</h3>
-                        <h4 class="product-price">$49.99</h4>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
                     </div>
                 </div>
             </div>
-            <!-- Single Product -->
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div id="product-3" class="single-product">
-                    <div class="part-1">
-                        <ul>
-                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                            <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                        </ul>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/06.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Nikee T-Shirt</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">$20.00</span>
+                            $18.00
+                        </div>
                     </div>
-                    <div class="part-2">
-                        <h3 class="product-title">Here Product Title</h3>
-                        <h4 class="product-old-price">$79.99</h4>
-                        <h4 class="product-price">$49.99</h4>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Product -->
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div id="product-4" class="single-product">
-                    <div class="part-1">
-                        <span class="new">new</span>
-                        <ul>
-                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                            <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="part-2">
-                        <h3 class="product-title">Here Product Title</h3>
-                        <h4 class="product-price">$49.99</h4>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
                     </div>
                 </div>
             </div>
-            <!-- Single Product -->
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div id="product-1" class="single-product">
-                    <div class="part-1">
-                        <ul>
-                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                            <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                        </ul>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/05.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Adidas T-Shirt</h5>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">$50.00</span>
+                            $25.00
+                        </div>
                     </div>
-                    <div class="part-2">
-                        <h3 class="product-title">Here Product Title</h3>
-                        <h4 class="product-old-price">$79.99</h4>
-                        <h4 class="product-price">$49.99</h4>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Product -->
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div id="product-2" class="single-product">
-                    <div class="part-1">
-                        <span class="discount">15% off</span>
-                        <ul>
-                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                            <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="part-2">
-                        <h3 class="product-title">Here Product Title</h3>
-                        <h4 class="product-price">$49.99</h4>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
                     </div>
                 </div>
             </div>
-            <!-- Single Product -->
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div id="product-3" class="single-product">
-                    <div class="part-1">
-                        <ul>
-                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                            <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                        </ul>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/06.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Nikee T-Shirt</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            $40.00
+                        </div>
                     </div>
-                    <div class="part-2">
-                        <h3 class="product-title">Here Product Title</h3>
-                        <h4 class="product-old-price">$79.99</h4>
-                        <h4 class="product-price">$49.99</h4>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Product -->
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div id="product-4" class="single-product">
-                    <div class="part-1">
-                        <span class="new">new</span>
-                        <ul>
-                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                            <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="part-2">
-                        <h3 class="product-title">Here Product Title</h3>
-                        <h4 class="product-price">$49.99</h4>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- Footer-->
 <div class="footer">
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
@@ -327,7 +306,11 @@
     </footer>
     <!-- Footer -->
 </div>
-<!-- partial -->
-
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
 </body>
 </html>
+
+
+
