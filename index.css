@@ -14,10 +14,6 @@
     width: 30px
 }
 
-.logo_image{
-    width: 200px;
-}
-
 .least_products{
     margin-left: 550px;
     margin-top: 20px;
@@ -57,3 +53,100 @@
     transform: scale(1.1);
 }
 
+.modal.fade.show {
+    backdrop-filter: blur(5px);
+}
+
+.navbar-nav .nav-link,
+.navbar-brand {
+    text-align: center;
+}
+
+@media screen and (min-width: 0px) {
+    .logo{
+        margin-left: 100%;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .logo{
+        margin-left: 200%;
+        width: 70px;
+    }
+
+
+}
+
+@media screen and (min-width: 450px) {
+    .logo{
+        margin-left: 340%;
+        width: 70px;
+    }
+
+
+}
+
+@media screen and (min-width: 600px) {
+    .logo{
+        margin-left: 420%;
+        width: 75px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 750px) {
+    .logo{
+        margin-left: 550%;
+        width: 75px;
+    }
+
+
+}
+
+@media screen and (min-width: 900px) {
+    .logo{
+        margin-left: 590%;
+        width: 80px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+   .logo{
+       margin-left: 600%;
+       width: 100px;
+   }
+
+
+
+
+
+
+}
+
+
+
+.loveIcon{
+    position: absolute;
+    left: 1200px;
+    top: 18px;
+    width: 20px;
+}
+
+.userIcon{
+    position: absolute;
+    left: 1230px;
+    top: 18px;
+    width: 20px;
+}
+
+.searchButton{
+    position: absolute;
+    left: 1100px;
+    top: 15px;
+}
